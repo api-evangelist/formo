@@ -1,8 +1,25 @@
 aid: formo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/formo.png
 name: Formo
-description: 'Formo is a company surfaced as a portfolio company of eqt-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: -. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Formo (Formo Foods GmbH) is a Berlin-based food-technology company producing
+  animal-free dairy through precision fermentation and microbial fermentation of koji
+  (Aspergillus oryzae). Instead of cows, Formo engineers microorganisms to make milk
+  proteins such as casein, which it turns into real cheese and cream cheese products
+  now sold across Germany and Austria. Founded by Raffael Wohlgensinger and backed
+  by EQT Ventures, the company has received a US FDA "no questions" GRAS letter for
+  its fermentation-derived casein. Formo is a consumer food producer and does not
+  currently publish a public developer API.'
 url: https://raw.githubusercontent.com/api-evangelist/formo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- ' '
+- Food Technology
+- Precision Fermentation
+- Animal-Free Dairy
+- Alternative Protein
+- Biotechnology
+- Sustainability
+- Cheese
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/formo-domain-security.yml
 - type: Website
   url: https://formo.bio/
+- type: Blog
+  url: https://formo.bio/category/all/
+- type: PrivacyPolicy
+  url: https://formo.bio/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
